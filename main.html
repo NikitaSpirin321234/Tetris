@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="main-container">
+                <div class="info-container">
+                    <div>
+                        <h2>Тетрис</h2>
+                        <h3 id="playerName">Игрок player</h3>
+                        <h3 id="score">Очки: 0</h3>
+                        <h3 id="level">Текущий уровень: 1</h3>
+                        <h4>Следующая фигура</h4>
+                        <div class="nextBrick">
+                            <canvas id="nextBrick" width="132" height="132"></canvas>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <h4>Управление</h4>
+                        <div>
+                            <img src="images/вниз.svg" alt="вниз">
+                            <span>уронить фигуру</span>
+                        </div>
+                        <div>
+                            <img src="images/вправо.svg" alt="вправо">
+                            <span>переместить фигуру вправо</span>
+                        </div>
+                        <div>
+                            <img src="images/влево.svg" alt="влево">
+                            <span>переместить фигуру влево</span>
+                        </div>
+                        <div>
+                            <img src="images/вверх.svg" alt="вверх">
+                            <span>повернуть фигуру</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-container">
+                    <canvas id="glass" width="330" height="660">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
